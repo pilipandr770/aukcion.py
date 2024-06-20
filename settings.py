@@ -1,0 +1,13 @@
+INSTALLED_APPS = [
+    ...
+    'corsheaders',
+    ...
+]
+
+MIDDLEWARE = [
+    ...
+    'corsheaders.middleware.CorsMiddleware',
+    ...
+]
+
+CORS_ORIGIN_ALLOW_ALL = True  # Для разработки, в продакшене настройте конкретные источники
